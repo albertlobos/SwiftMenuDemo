@@ -20,6 +20,7 @@
 		48E4EB0D2B100EE800E9C344 /* itemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4EB0C2B100EE800E9C344 /* itemRow.swift */; };
 		48E4EB102B1020EB00E9C344 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4EB0F2B1020C200E9C344 /* Menu.swift */; };
 		48E4EB122B10240F00E9C344 /* itemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4EB112B10240F00E9C344 /* itemDetail.swift */; };
+		48E4EB142B1034CD00E9C344 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4EB132B1034CD00E9C344 /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		48E4EB0C2B100EE800E9C344 /* itemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemRow.swift; sourceTree = "<group>"; };
 		48E4EB0F2B1020C200E9C344 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		48E4EB112B10240F00E9C344 /* itemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemDetail.swift; sourceTree = "<group>"; };
+		48E4EB132B1034CD00E9C344 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				48E4EAD82B1008CB00E9C344 /* SwiftMenuDemoApp.swift */,
 				48E4EADA2B1008CB00E9C344 /* ContentView.swift */,
 				48E4EB112B10240F00E9C344 /* itemDetail.swift */,
+				48E4EB132B1034CD00E9C344 /* OrderView.swift */,
 				48E4EB0C2B100EE800E9C344 /* itemRow.swift */,
 				48E4EADC2B1008CC00E9C344 /* Assets.xcassets */,
 				48E4EADE2B1008CC00E9C344 /* Preview Content */,
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E4EB102B1020EB00E9C344 /* Menu.swift in Sources */,
+				48E4EB142B1034CD00E9C344 /* OrderView.swift in Sources */,
 				48E4EB0D2B100EE800E9C344 /* itemRow.swift in Sources */,
 				48E4EADB2B1008CB00E9C344 /* ContentView.swift in Sources */,
 				48E4EB0B2B10096100E9C344 /* Order.swift in Sources */,

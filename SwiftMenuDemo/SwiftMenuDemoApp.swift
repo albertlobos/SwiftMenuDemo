@@ -13,7 +13,7 @@ struct SwiftMenuDemoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            mainView()
                 .environmentObject(order);
         }
     }

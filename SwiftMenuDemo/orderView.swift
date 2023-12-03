@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OrderView: View {
+struct orderView: View {
     @EnvironmentObject var order: Order
     var body: some View {
         NavigationStack{
@@ -24,7 +24,7 @@ struct OrderView: View {
                 
                 Section{
                     NavigationLink("Place Order"){
-                        Text("Check out");
+                        checkoutView();
                     }
                 }
             }
@@ -33,8 +33,8 @@ struct OrderView: View {
     }
 }
 
-struct OrderView_Previews: PreviewProvider {
+struct orderView_Previews: PreviewProvider {
     static var previews: some View {
-        OrderView().environmentObject(Order());
+        orderView().environmentObject(Order());
     }
 }

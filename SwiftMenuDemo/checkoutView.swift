@@ -42,16 +42,23 @@ struct checkoutView: View {
                 .pickerStyle(.segmented)
             }
             
-            Section("Total: $100"){
-                Button("Confirm Order") {
+            Section("Total: \(totalPrice)"){
+                Button("Confirm Order"){
                     print("Hello");
                 }
             }
+            
         }
         .navigationTitle("Payment")
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitleDisplayMode(.inline);
         
         
+    }
+    
+    var totalPrice: String {
+        let total = Double(order.total);
+        let tipValue = total / 100 * Double(tipAmount);
+        return (total + tipValue).formatted(.currency(code: "USD"));
     }
 }
 

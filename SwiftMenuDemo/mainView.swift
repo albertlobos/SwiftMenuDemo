@@ -20,7 +20,12 @@ struct mainView: View {
             orderView()
                 .tabItem {
                     Label("Order", systemImage: "square.and.pencil");
-                }
+                };
+            
+            checkoutView()
+                .tabItem {
+                    Label("Checkout", systemImage: "list.dash");
+                };
         }
     }
 }

@@ -20,6 +20,7 @@ struct orderView: View {
                             Text("$\(item.price)");
                         }
                     }
+                    .onDelete(perform: deleteItems);
                 }
                 
                 Section{
@@ -27,9 +28,17 @@ struct orderView: View {
                         checkoutView();
                     }
                 }
+                .disabled(order.items.isEmpty);
             }
             .navigationTitle("Order")
+            .toolbar{
+                EditButton();
+            }
         }
+    }
+    
+    func deleteItems(at offsets: IndexSet){
+        order.items.remove(atOffsets: offsets);
     }
 }
 

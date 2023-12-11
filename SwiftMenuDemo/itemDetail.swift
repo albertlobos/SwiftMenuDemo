@@ -9,6 +9,7 @@ import SwiftUI
 
 struct itemDetail: View {
     @EnvironmentObject var order: Order
+    @State private var alertShowing = false;
     let item:MenuItem
     
     var body: some View {
@@ -28,12 +29,18 @@ struct itemDetail: View {
                 .padding();
             Button("Add to Order") {
                 order.add(item: item);
+                alertShowing.toggle();
             }
             .buttonStyle(.borderedProminent);
             Spacer();
         }
         .navigationTitle(item.name)
-        .navigationBarTitleDisplayMode(.inline);
+        .navigationBarTitleDisplayMode(.inline)
+        .alert("Added to Order", isPresented: $alertShowing){
+            //Custom Buttons would go here for alert
+        } message: {
+            Text("\(item.name) was added to your order!");
+        };
     }
 }
 
